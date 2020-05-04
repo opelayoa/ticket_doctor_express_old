@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.TicketDetailEditActivity"
+    tools:showIn="@layout/activity_ticket_detail_edit">
+
+    <LinearLayout android:id="@+id/llTicketDetailEdit"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingBottom="16dp"
+                  android:paddingTop="16dp">
+
+        <com.farbod.labelledspinner.LabelledSpinner
+            android:id="@+id/spnTicketStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:labelText="@string/ticket_status"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilOpeningDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtOpeningDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_opening_date"
+                android:inputType="none"
+                android:textIsSelectable="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilSolutionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtSolutionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_solution_date"
+                android:inputType="none"
+                android:textIsSelectable="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_caption"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/txtApplicant"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtApplicant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_applicant"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/txtTechnician"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtTechnician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_technician"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/spnCategory"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.farbod.labelledspinner.LabelledSpinner
+            android:id="@+id/spnCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/spnType"
+            app:labelText="@string/ticket_category"/>
+
+        <com.farbod.labelledspinner.LabelledSpinner
+            android:id="@+id/spnType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/ticket_type"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtSymptom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_symptom"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtDiagnostic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_diagnostic"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_branch"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_file"
+                android:inputType="none"
+                android:maxLines="3"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilSolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtSolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_solution"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Switch
+            android:id="@+id/swtRemoteSolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/ticket_remote_solution"
+            android:visibility="gone"/>
+
+        <com.farbod.labelledspinner.LabelledSpinner
+            android:id="@+id/spnPossibleOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/ticket_possible_origin"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilWaitingForUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtWaitingForUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_waiting_for_user"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilWaitingForProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtWaitingForProvider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_waiting_for_provider"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilCause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtCause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_cause"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtObservations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ticket_observations"
+                android:maxLines="5"/>
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/ticket_observations_note"/>
+
+        <com.farbod.labelledspinner.LabelledSpinner
+            android:id="@+id/spnProjectStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/ticket_project_status"/>
+
+        <include layout="@layout/content_ticket_detail_actions"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:text="@string/ticket_add_action"
+            android:id="@+id/btnAddAction"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

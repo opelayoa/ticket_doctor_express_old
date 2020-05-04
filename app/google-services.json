@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "337762747138",
+    "project_id": "api-project-337762747138"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337762747138:android:05d7b1741b370d31",
+        "android_client_info": {
+          "package_name": "com.seg.gto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9FXopbLtRblMftyo5vYN1nkLgBU1zF4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337762747138:android:b2d502ac41100508",
+        "android_client_info": {
+          "package_name": "com.tiendas3b.ticketdoctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9FXopbLtRblMftyo5vYN1nkLgBU1zF4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337762747138:android:5b304da192914b49",
+        "android_client_info": {
+          "package_name": "com.tiendas3b.almacen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9FXopbLtRblMftyo5vYN1nkLgBU1zF4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
